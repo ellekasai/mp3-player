@@ -11,8 +11,8 @@ function initAudio(element) {
 	audio = new Audio('music/'+ song);
 
 	// Insert the Audio Info
-	$('.artist').text(artist);
 	$('.title').text(title);
+	$('.artist').text(artist);
 
 	// Insert the Song Cover
 	$('img.cover').attr('src','images/covers/'+cover);

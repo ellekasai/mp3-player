@@ -4,10 +4,15 @@ I made this one to practice JavaScripts.
 
 ## Browser Support
 
-## Author & License
+- Latest versions of Chrome, Firefox, Safari, and Microsoft Edge
+- Windows IE11
+- iOS 10+
+- Android 5.0+
+
+
+## Author
 
 Elle Kasai
 
 - [Website](http://ellekasai.com)
-
-Code: [MIT License](http://ellekasai.mit-license.org).
+- [LinkedIn](https://www.linkedin.com/in/ellekasai)
