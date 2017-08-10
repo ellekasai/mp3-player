@@ -12,14 +12,14 @@ function initAudio(element){
 	var artist = element.attr('artist');
 
 	//Create audio object
-	audio = new Audio('/music/'+ song);
+	audio = new Audio('music/'+ song);
 
 	//Insert audio info
 	$('.artist').text(artist);
 	$('.title').text(title);
 
 	//Insert song cover
-	$('img.cover').attr('src','/images/covers/'+cover);
+	$('img.cover').attr('src','images/covers/'+cover);
 
 	$('#playlist li').removeClass('active');
 	element.addClass('active');
