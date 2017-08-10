@@ -1,0 +1,21 @@
+/* ---------------------------------------------------
+    Elle's MP3 Player
+--------------------------------------------------- */
+
+// Base Settings
+@import "settings/normalize";
+@import "settings/variables";
+@import "settings/mixins";
+@import "settings/base";
+
+// Base Layouts
+@import "layout/grid";
+@import "layout/containers";
+
+// Partials
+@import "partials/header";
+@import "partials/footer";
+@import "partials/player";
+
+// Pages Specific Styles
+@import "pages/home";

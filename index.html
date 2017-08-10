@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elle's MP3 Player</title>
+  <link rel="stylesheet" href="/stylesheets/mp3-player.css">
+</head>
+<body>
+	<div id="container">
+    <div id="audio-image">
+      <img class="cover" width="100">
+    </div>
+    <div id="audio-player">
+      <div id="audio-info">
+        <span class="artist"></span> - <span class="title"></span>
+      </div>
+      <input id="volume" type="range" min="0" max="10" value="4">
+      <br>
+      <div id="buttons">
+        <span>
+          <button id="prev">Previous</button>
+          <button id="play">Play</button>
+          <button id="pause">Pause</button>
+          <button id="stop">Stop</button>
+          <button id="next">Next</button>
+        </span>
+      </div>
+      <div id="tracker">
+        <div id="progress-bar">
+          <span id="progress"></span>
+        </div>
+        <span id="duration"></span>
+      </div>
+      <ul id="playlist" class="hidden">
+        <li class="active" song="track1.mp3" cover="cover1.jpg" artist="Bob Marley">Song.mp3</li>
+        <li song="chopin.mp3" cover="cover2.jpg" artist="Chopin">chopin.mp3</li>
+      </ul>
+    </div>
+	</div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="/javascripts/mp3-player.js"></script>
+</body>
+</html>
