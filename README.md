@@ -1,5 +1,5 @@
 # Elle's MP3 Player
-Welcome to my MP3 Player! I made this one to practice JavaScripts. Hope you enjoy it :)
+Welcome to my MP3 player! I made this for practicing JavaScripts. Hope you enjoy it :)
 
 [View Demo →](http://ellekasai.github.io/mp3-player)
 
@@ -14,7 +14,7 @@ Following [this article](https://www.sitepoint.com/browsers-website-support/), I
 
 ## Frameworks
 
-- I use [jQuery](https://jquery.com/) for JavaScripts.
+- I use [jQuery](https://jquery.com/) for JavaScripts, and got inspiration from [this article](https://www.eduonix.com/blog/web-programming-tutorials/learn-build-audio-player-using-html5/).
 - For styling HTML/CSS, I use my framework which I build from scratch.
 
 ## Music & Photos

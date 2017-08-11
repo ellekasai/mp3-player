@@ -22,7 +22,7 @@ main {
   padding: $spacing-x-large 0;
   background-color: $color-bg-main;
   @include tablet-and-up {
-    padding: ($spacing-x-large * 2) 0;
+    padding: $spacing-x-large 0 ($spacing-x-large * 2);
   }
 }
 
