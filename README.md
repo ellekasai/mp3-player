@@ -3,6 +3,17 @@ Welcome to my MP3 player! I made this for practicing JavaScripts. Hope you enjoy
 
 [View Demo →](http://ellekasai.github.io/mp3-player)
 
+## Current Features
+
+- Play the Song
+- Pause the Song
+- Stop the Song
+- Show the Duration & Time Left
+- Change the Duration by Clicking the Progress Bar
+- Change the Volume
+- Change to the Next Song or Previous Song
+- Choose a Song from the playlist
+
 ## Browser Support
 
 Following [this article](https://www.sitepoint.com/browsers-website-support/), I chose following browsers:
