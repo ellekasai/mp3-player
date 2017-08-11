@@ -63,15 +63,6 @@ $(function() {
 		});
 	}
 
-	// Wait for Loading Audio
-	function loadAndPlay() {
-		audio.addEventListener('loadeddata', function() {
-			showDuration();
-			showTimeLeft();
-			audio.play();
-		});
-	}
-
 	// Hide Pause Button
 	$('#pause-btn').hide();
 
@@ -115,7 +106,11 @@ $(function() {
 			next = $('#playlist li:first-child');
 		}
 		initAudio(next);
-		loadAndPlay();
+		audio.addEventListener('loadeddata', function() {
+			showDuration();
+			showTimeLeft();
+			audio.play();
+		});
 	});
 
 	// Prev Button
@@ -127,7 +122,11 @@ $(function() {
 			prev = $('#playlist li:last-child');
 		}
 		initAudio(prev);
-		loadAndPlay();
+		audio.addEventListener('loadeddata', function() {
+			showDuration();
+			showTimeLeft();
+			audio.play();
+		});
 	});
 
 	// Click a Song in Playlist
@@ -136,7 +135,11 @@ $(function() {
 		initAudio($(this));
 		$('#play-btn').hide();
 		$('#pause-btn').show();
-		loadAndPlay();
+		audio.addEventListener('loadeddata', function() {
+			showDuration();
+			showTimeLeft();
+			audio.play();
+		});
 	});
 
 	// Volume Control
