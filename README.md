@@ -12,6 +12,11 @@ Following [this article](https://www.sitepoint.com/browsers-website-support/), I
 - iOS 10+
 - Android 5.0+
 
+## Resources
+
+- [StockSnap.io (Photo)](https://stocksnap.io/)
+- [DOVA-SYNDROME (Music)](http://dova-s.jp/)
+
 ## Author
 
 Elle Kasai
