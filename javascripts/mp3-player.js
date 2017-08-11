@@ -63,6 +63,14 @@ $(function() {
 		});
 	}
 
+	// Wait to Finish Loading Audio Files
+	function waitAndShowTime() {
+		audio.addEventListener('loadeddata', function() {
+			showDuration();
+			showTimeLeft();
+		});
+	}
+
 	// Hide Pause Button
 	$('#pause-btn').hide();
 
@@ -106,10 +114,7 @@ $(function() {
 			next = $('#playlist li:first-child');
 		}
 		initAudio(next);
-		audio.addEventListener('loadeddata', function() {
-			showDuration();
-			showTimeLeft();
-		});
+		waitAndShowTime();
 		audio.play();
 	});
 
@@ -122,10 +127,7 @@ $(function() {
 			prev = $('#playlist li:last-child');
 		}
 		initAudio(prev);
-		audio.addEventListener('loadeddata', function() {
-			showDuration();
-			showTimeLeft();
-		});
+		waitAndShowTime();
 		audio.play();
 	});
 
@@ -135,10 +137,7 @@ $(function() {
 		initAudio($(this));
 		$('#play-btn').hide();
 		$('#pause-btn').show();
-		audio.addEventListener('loadeddata', function() {
-			showDuration();
-			showTimeLeft();
-		});
+		waitAndShowTime();
 		audio.play();
 	});
 
