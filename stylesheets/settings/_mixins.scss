@@ -26,25 +26,3 @@
     clear: both;
   }
 }
-
-// Button Style
-@mixin button-style($background-color, $color) {
-  background-color: $background-color;
-  color: $color !important;
-  &:hover, &:focus              {background-color: lighten($background-color, 5%);}
-  &:active                      {background-color: darken($background-color, 5%);}
-  &[disabled] {&:hover, &:focus {background-color: $background-color;}}
-}
-
-@mixin button-group-style($background-color, $border-color, $color) {
-  &:hover, &:focus  {color: $color}
-  &.active          {background-color: $background-color;}
-  + .button-default {border-left: $border-thin solid $border-color;}
-}
-
-// Transform
-@mixin transform($x,$y){
-  -webkit-transform:  translate($x, $y);
-  -ms-transform:      translate($x, $y);
-  transform:          translate($x, $y);
-}

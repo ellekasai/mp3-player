@@ -1,3 +1,18 @@
 /* ---------------------------------------------------
     Header
 --------------------------------------------------- */
+
+.header {
+  padding: $spacing-x-large $spacing-small 0;
+  text-align: center;
+  @include tablet-and-up {
+    padding: ($spacing-x-large * 2) 0 0;
+  };
+  h1 {
+    font-family: $font-family-logo;
+  }
+  p {
+    margin-bottom: 0;
+    font-size: $font-size-medium;
+  }
+}

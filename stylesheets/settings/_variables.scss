@@ -74,15 +74,11 @@ $border-thick   : 4px;
 /* ------ Project Theme ------ */
 
 // Project Colors
-$pink-purple: #8b7297;
-$tealish    : #31aeaa;
+$purple: #8b7297;
 
 // System Default Colors
 $white   : #fff;
 $black   : #252525;
-$success : #3bc374;
-$warning : #e6ca23;
-$error   : #dd4627;
 
 // Grayscale
 $gray-10 : #ededed;
@@ -92,15 +88,12 @@ $gray-40 : #7a7a7a;
 $gray-50 : #414141;
 
 // Shadows
-$text-shadow       : 0 0 4px rgba(0, 0, 0, 0.35);
-$box-shadow        : 0 0 4px 0 rgba(0, 0, 0, 0.30);
-$inset-box-shadow  : inset 0 1px 2px 0 rgba(0,0,0,0.15);
+$box-shadow : 0 0 4px 0 rgba(0, 0, 0, 0.30);
 
 /* ------ Setting Colors ------ */
 
 // Main Colors
-$color-primary   : $pink-purple;
-$color-secondary : $tealish;
+$color-primary   : $purple;
 
 // Main Color Shades
 $color-primary-l-30 : lighten($color-primary, 45%);
@@ -110,17 +103,10 @@ $color-primary-d-10 : darken($color-primary, 5%);
 $color-primary-d-20 : darken($color-primary, 10%);
 $color-primary-d-30 : darken($color-primary, 20%);
 
-$color-secondary-l-30 : lighten($color-secondary, 45%);
-$color-secondary-l-20 : lighten($color-secondary, 20%);
-$color-secondary-l-10 : lighten($color-secondary, 5%);
-$color-secondary-d-10 : darken($color-secondary, 5%);
-$color-secondary-d-20 : darken($color-secondary, 10%);
-$color-secondary-d-30 : darken($color-secondary, 20%);
-
 // Background Colors
-$color-bg-body   : $gray-20;
+$color-bg-body   : $white;
 $color-bg-header : $color-primary;
-$color-bg-main   : $gray-20;
+$color-bg-main   : $white;
 $color-bg-footer : $color-primary-l-30;
 
 // Border Colors
@@ -130,8 +116,8 @@ $color-border : $gray-20;
 $color-text-body       : $gray-30;
 $color-text-heading-h1 : $color-primary;
 $color-text-heading-h2 : $black;
-$color-text-heading-h3 : $color-secondary;
-$color-text-heading-h4 : $gray-40;
+$color-text-heading-h3 : $color-primary;
+$color-text-heading-h4 : $black;
 $color-link            : $color-primary;
 $color-link-hover      : $color-primary-l-10;
 
@@ -143,8 +129,8 @@ $color-link-hover      : $color-primary-l-10;
 /* ------ Project Theme ------ */
 
 // Font Family
-$font-family-primary   : 'Rajdhani', 'Microsoft YaHei','微软雅黑', STXihei, '华文细黑', Arial, sans-serif;
-$font-family-secondary : 'Helvetica Neue', Helvetica, 'Microsoft YaHei','微软雅黑', STXihei, '华文细黑', Arial, sans-serif;
+$font-family-primary   : 'Lobster', cursive, Arial, sans-serif;
+$font-family-secondary : 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 // Font Weight
 $font-weight-bold    : 500;
@@ -152,7 +138,7 @@ $font-weight-default : 400;
 $font-weight-light   : 300;
 
 // Font Sizes
-$font-size-xx-large : 2rem;
+$font-size-xx-large : 3.5rem;
 $font-size-x-large  : 1.8rem;
 $font-size-large    : 1.6rem;
 $font-size-medium   : 1.2rem;

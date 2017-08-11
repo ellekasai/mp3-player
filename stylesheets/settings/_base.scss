@@ -11,6 +11,7 @@
 body {
   position: relative;
   background-color: $color-bg-body;
+  border-top: 10px solid $color-primary;
   color: $color-text-body;
   font-family: $font-family-body;
   font-size: $font-size-body;
@@ -18,17 +19,11 @@ body {
 }
 
 main {
-  padding: $spacing-large 0 $spacing-x-large;
+  padding: $spacing-x-large 0;
   background-color: $color-bg-main;
-  @include laptop-and-up {
-    padding: ($spacing-x-large + $spacing-medium) 0 ($spacing-x-large * 4);
+  @include tablet-and-up {
+    padding: ($spacing-x-large * 2) 0;
   }
-}
-
-section {
-  position: relative;
-  margin-bottom: $spacing-x-large;
-  &:last-child {margin-bottom: 0;}
 }
 
 h1, h2, h3, h4 {
@@ -41,8 +36,10 @@ h1, h2, h3, h4 {
 h1 {
   margin-bottom: $spacing-small + $spacing-x-small;
   color: $color-text-heading-h1;
-  font-size: $font-size-h1;
-  @include laptop-and-up {margin-bottom: $spacing-large;};
+  font-size: $font-size-h1 - .5rem;
+  @include laptop-and-up {
+    margin-bottom: $spacing-large;
+  };
 }
 
 h2 {
@@ -81,7 +78,6 @@ img {
 }
 
 p {
-  max-width: 650px;
   margin: 0 0 $spacing-x-small;
   color: $color-text-body;
   line-height: $line-height-narrow;

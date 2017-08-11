@@ -1,3 +1,23 @@
 /* ---------------------------------------------------
     Footer
 --------------------------------------------------- */
+
+.footer {
+  padding: $spacing-x-large $spacing-medium;
+  background-color: $color-bg-footer;
+  text-align: center;
+  p {
+    margin-bottom: 0;
+    font-size: $font-size-medium;
+  }
+}
+
+.footer-social-links {
+  margin-top: $spacing-large;
+  li {
+    display: inline-block;
+    + li {
+      margin-left: $spacing-small;
+    }
+  }
+}

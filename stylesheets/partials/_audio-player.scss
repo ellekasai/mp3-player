@@ -4,6 +4,8 @@
 
 .audio-player {
   position: relative;
+  border-radius: $radius-default;
+  box-shadow: $box-shadow;
 }
 
 .audio-player-cover {
@@ -54,9 +56,7 @@
   background-color: $white;
   border-radius: 0 0 $radius-default $radius-default;
   text-align: center;
-  @include tablet-and-up {
-    padding: $spacing-large;
-  };
+  @include tablet-and-up {padding: $spacing-large;};
   .body-section + .body-section {
     margin-top: $spacing-large;
   }
@@ -66,9 +66,7 @@
       img {
         height: 30px;
         transition: transform .15s linear;
-        @include tablet-and-up {
-          height: 44px;
-        };
+        @include tablet-and-up {height: 44px;};
       }
       &:hover, &:focus {
         img {
