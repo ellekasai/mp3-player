@@ -1,0 +1,102 @@
+/* ---------------------------------------------------
+    Player
+--------------------------------------------------- */
+
+.audio-player {
+  position: relative;
+}
+
+.audio-player-cover {
+  height: 250px;
+  background-color: $gray-40;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: $radius-default $radius-default 0 0;
+}
+
+.audio-player-progress {
+  position: absolute;
+  top: 205px;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  padding: $spacing-medium;
+  background-color: rgba(0, 0, 0, .8);
+  .progress-duration,
+  .progress-audio-length {
+    position: absolute;
+    color: $gray-20;
+    top: 50%;
+    margin-top: ($spacing-small + 2) * -1;
+  }
+  .progress-duration {
+    left: $spacing-large + $spacing-small;
+  }
+  .progress-bar {
+    width: 200px;
+    height: 4px;
+    margin: 0 auto;
+    background-color: $gray-40;
+    .bar-current {
+      display: block;
+      height: 100%;
+      background-color: $white;
+    }
+  }
+  .progress-audio-length {
+    right: $spacing-medium + $spacing-x-small;
+  }
+}
+
+.audio-player-body {
+  padding: $spacing-large;
+  background-color: $white;
+  border-radius: 0 0 $radius-default $radius-default;
+  text-align: center;
+  .body-section + .body-section {
+    margin-top: $spacing-large;
+  }
+  .body-btns {
+    .btn {
+      display: inline-block;
+      img {
+        transition: transform .15s linear;
+      }
+      &:hover, &:focus {
+        img {
+          transform: scale(1.1);
+        }
+      }
+      + .btn {
+        margin-left: $spacing-medium;
+      }
+    }
+  }
+  .body-volume {
+    img, input {
+      vertical-align: middle;
+    }
+    img {
+      width: 25px;
+      + input {
+        margin-left: $spacing-small;
+      }
+    }
+  }
+  .body-playlist {
+    background-color: $color-primary-l-30;
+    li {
+      padding: $spacing-x-small;
+      &:hover, &:focus {
+        background-color: $color-primary-l-20;
+        cursor: pointer;
+        color: $white;
+      }
+      &.active {
+        background-color: $color-primary;
+        color: $white;
+      }
+    }
+  }
+}

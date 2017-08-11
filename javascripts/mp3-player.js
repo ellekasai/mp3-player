@@ -5,17 +5,19 @@ function initAudio(element) {
 	var song = element.attr('song');
 	var title = element.text();
 	var cover = element.attr('cover');
+	var album = element.attr('album');
 	var artist = element.attr('artist');
 
 	// Create a New Audio Object
 	audio = new Audio('music/'+ song);
 
 	// Insert the Audio Info
-	$('.title').text(title);
-	$('.artist').text(artist);
+	$('#title').text(title);
+	$('#album').text(album);
+	$('#artist').text(artist);
 
 	// Insert the Song Cover
-	$('img.cover').attr('src','images/covers/'+cover);
+	$('#cover-img').attr('style','background-image: url(images/covers/' + cover + ')');
 
 	// Add .active to the Item in Playlist
 	$('#playlist li').removeClass('active');
@@ -41,36 +43,36 @@ function showDuration() {
 }
 
 // Hide Pause Button
-$('#pause').hide();
+$('#pause-btn').hide();
 
 // Set the Initial Audio
 initAudio($('#playlist li:first-child'));
 
 // Play Button
-$('#play').click(function() {
+$('#play-btn').click(function() {
 	audio.play();
-	$('#play').hide();
-	$('#pause').show();
+	$('#play-btn').hide();
+	$('#pause-btn').show();
 	showDuration();
 });
 
 // Pause Button
-$('#pause').click(function() {
+$('#pause-btn').click(function() {
 	audio.pause();
-	$('#play').show();
-	$('#pause').hide();
+	$('#play-btn').show();
+	$('#pause-btn').hide();
 });
 
 // Stop Button
-$('#stop').click(function() {
+$('#stop-btn').click(function() {
 	audio.pause();
-	$('#play').show();
-	$('#pause').hide();
+	$('#play-btn').show();
+	$('#pause-btn').hide();
 	audio.currentTime = 0;
 });
 
 // Next Button
-$('#next').click(function() {
+$('#next-btn').click(function() {
 	audio.pause();
 	var next = $('#playlist li.active').next();
 	if(next.length == 0) {
@@ -82,7 +84,7 @@ $('#next').click(function() {
 });
 
 // Prev Button
-$('#prev').click(function() {
+$('#prev-btn').click(function() {
 	audio.pause();
 	var prev = $('#playlist li.active').prev();
 	if(prev.length == 0) {
@@ -94,7 +96,7 @@ $('#prev').click(function() {
 });
 
 // Volume Control
-$('#volume').change(function() {
+$('#volume-slider').change(function() {
 	audio.volume = parseFloat(this.value / 10);
 });
 
@@ -102,8 +104,8 @@ $('#volume').change(function() {
 $('#playlist li').click(function() {
 	audio.pause();
 	initAudio($(this));
-	$('#play').hide();
-	$('#pause').show();
+	$('#play-btn').hide();
+	$('#pause-btn').show();
 	audio.play();
 	showDuration();
 });

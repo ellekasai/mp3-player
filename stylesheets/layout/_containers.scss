@@ -1,3 +1,13 @@
 /* ---------------------------------------------------
     Container
 --------------------------------------------------- */
+
+.container {
+  max-width: $max-content-width;
+  margin: 0 auto;
+  padding: 0 $spacing-small + $spacing-x-small;
+
+  @include laptop-and-up {
+    padding: 0 $spacing-medium;
+  };
+}

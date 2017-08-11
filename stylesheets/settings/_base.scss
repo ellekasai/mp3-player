@@ -1,3 +1,98 @@
 /* ---------------------------------------------------
     Base
 --------------------------------------------------- */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box !important;
+}
+
+body {
+  position: relative;
+  background-color: $color-bg-body;
+  color: $color-text-body;
+  font-family: $font-family-body;
+  font-size: $font-size-body;
+  line-height: $line-height-body;
+}
+
+main {
+  padding: $spacing-large 0 $spacing-x-large;
+  background-color: $color-bg-main;
+  @include laptop-and-up {
+    padding: ($spacing-x-large + $spacing-medium) 0 ($spacing-x-large * 4);
+  }
+}
+
+section {
+  position: relative;
+  margin-bottom: $spacing-x-large;
+  &:last-child {margin-bottom: 0;}
+}
+
+h1, h2, h3, h4 {
+  margin-top: 0;
+  font-family: $font-family-heading;
+  font-weight: $font-weight-heading;
+  line-height: $line-height-heading;
+}
+
+h1 {
+  margin-bottom: $spacing-small + $spacing-x-small;
+  color: $color-text-heading-h1;
+  font-size: $font-size-h1;
+  @include laptop-and-up {margin-bottom: $spacing-large;};
+}
+
+h2 {
+  margin-bottom: $spacing-small + $spacing-x-small;
+  color: $color-text-heading-h2;
+  font-size: $font-size-h2;
+}
+
+h3 {
+  margin-bottom: $spacing-small;
+  color: $color-text-heading-h3;
+  font-size: $font-size-h3;
+  @include laptop-and-up {margin-bottom: $spacing-small + $spacing-x-small;};
+}
+
+h4 {
+  margin-bottom: $spacing-small;
+  color: $color-text-heading-h4;
+  font-size: $font-size-h4;
+}
+
+ol {
+  padding-left: $spacing-medium;
+  li {margin: $spacing-small 0;}
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  max-width: 650px;
+  margin: 0 0 $spacing-x-small;
+  color: $color-text-body;
+  line-height: $line-height-narrow;
+}
+
+a {
+  color: $color-link;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    color: $color-link-hover;
+    text-decoration: underline;
+  }
+}

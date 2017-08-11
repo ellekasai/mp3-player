@@ -7,40 +7,59 @@
   <link rel="stylesheet" href="stylesheets/mp3-player.css">
 </head>
 <body>
-	<div id="container">
-    <div id="audio-image">
-      <img class="cover" width="100">
-    </div>
-    <div id="audio-player">
-      <div id="audio-info">
-        <span class="title"></span> - <span class="artist"></span>
-      </div>
-      <input id="volume" type="range" min="0" max="10" value="4">
-      <br>
-      <div id="buttons">
-        <span>
-          <button id="prev">Previous</button>
-          <button id="play">Play</button>
-          <button id="pause">Pause</button>
-          <button id="stop">Stop</button>
-          <button id="next">Next</button>
-        </span>
-      </div>
-      <div id="tracker">
-        <div id="progress-bar">
-          <span id="progress"></span>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col col-sm-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+          <div class="audio-player">
+            <div id="cover-img" class="audio-player-cover"></div>
+            <div class="audio-player-progress">
+              <span id="duration" class="progress-duration">0:00</span>
+              <div class="progress-bar">
+                <span id="progress" class="bar-current"></span>
+              </div>
+              <span id="audio-length" class="progress-audio-length">00:00:00</span>
+            </div>
+            <div class="audio-player-body">
+              <div class="body-header body-section">
+                <h2 id="title"></h2>
+                <p id="album"></p>
+                <p id="artist"></p>
+              </div>
+              <div class="body-btns body-section">
+                <a id="previous-btn" class="btn prev" href="#">
+                  <img src="images/icons/btn-previous.png" alt="Previous Butoon">
+                </a>
+                <a id="play-btn" class="btn play" href="#">
+                  <img src="images/icons/btn-play.png" alt="Play Button">
+                </a>
+                <a id="pause-btn" class="btn pause" href="#">
+                  <img src="images/icons/btn-pause.png" alt="Pause Button">
+                </a>
+                <a id="stop-btn" class="btn stop" href="#">
+                  <img src="images/icons/btn-stop.png" alt="Stop Button">
+                </a>
+                <a id="next-btn" class="btn next" href="#">
+                  <img src="images/icons/btn-next.png" alt="Next Button">
+                </a>
+              </div>
+              <form class="body-volume body-section">
+                <img src="images/icons/btn-volume.png" alt="">
+                <input id="volume-slider" type="range" min="0" max="10" value="4">
+              </form>
+              <ul id="playlist" class="body-playlist body-section">
+                <li song="three-little-birds.mp3" cover="three-little-birds.jpg" album="The Best Bob Marley & the Wailers" artist="Bob Marley" class="active">Three Little Birds</li>
+                <li song="prelude-in-c-minor.mp3" cover="prelude-in-c-minor.jpg" album="Chopin's Prelude" artist="Chopin">Prelude in C Minor</li>
+                <li song="summer-sky.mp3" cover="summer-sky.jpg" album="DOVA 2017" artist="GT-K">Summer Sky</li>
+                <li song="my-beach.mp3" cover="my-beach.jpg" album="DOVA 2017" artist="MFP">My Beach</li>
+                <li song="water-moon.mp3" cover="water-moon.jpg" album="DOVA 2017" artist="Yoshinori Tanaka">Water Moon</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <span id="duration"></span>
       </div>
-      <ul id="playlist" class="hidden">
-        <li class="active" song="three-little-birds.mp3" cover="three-little-birds.jpg" artist="Bob Marley">Three Little Birds</li>
-        <li song="prelude-in-c-minor.mp3" cover="prelude-in-c-minor.jpg" artist="Chopin">Prelude in C Minor</li>
-        <li song="summer-sky.mp3" cover="summer-sky.jpg" artist="GT-K">Summer Sky</li>
-        <li song="my-beach.mp3" cover="my-beach.jpg" artist="MFP">My Beach</li>
-        <li song="water-moon.mp3" cover="water-moon.jpg" artist="Yoshinori Tanaka">Water Moon</li>
-      </ul>
-    </div>
-	</div>
+  	</div>
+  </main>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="javascripts/mp3-player-min.js"></script>
 </body>
