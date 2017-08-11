@@ -87,7 +87,10 @@
   .body-playlist {
     background-color: $color-primary-l-30;
     li {
-      padding: $spacing-x-small;
+      padding: $spacing-x-small $spacing-small;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
       &:hover, &:focus {
         background-color: $color-primary-l-20;
         cursor: pointer;
