@@ -109,8 +109,8 @@ $(function() {
 		audio.addEventListener('loadeddata', function() {
 			showDuration();
 			showTimeLeft();
-			audio.play();
 		});
+		audio.play();
 	});
 
 	// Prev Button
@@ -125,8 +125,8 @@ $(function() {
 		audio.addEventListener('loadeddata', function() {
 			showDuration();
 			showTimeLeft();
-			audio.play();
 		});
+		audio.play();
 	});
 
 	// Click a Song in Playlist
@@ -138,8 +138,8 @@ $(function() {
 		audio.addEventListener('loadeddata', function() {
 			showDuration();
 			showTimeLeft();
-			audio.play();
 		});
+		audio.play();
 	});
 
 	// Volume Control
