@@ -56,7 +56,9 @@
   background-color: $white;
   border-radius: 0 0 $radius-default $radius-default;
   text-align: center;
-  @include tablet-and-up {padding: $spacing-large;};
+  @include tablet-and-up {
+    padding: $spacing-large;
+  };
   .body-section + .body-section {
     margin-top: $spacing-large;
   }
@@ -66,7 +68,9 @@
       img {
         height: 30px;
         transition: transform .15s linear;
-        @include tablet-and-up {height: 44px;};
+        @include tablet-and-up {
+          height: 40px;
+        };
       }
       &:hover, &:focus {
         img {
@@ -91,6 +95,7 @@
   }
   .body-playlist {
     background-color: $color-primary-l-30;
+    box-shadow: $inset-box-shadow;
     li {
       padding: $spacing-x-small $spacing-small;
       overflow: hidden;
@@ -104,6 +109,9 @@
       &.active {
         background-color: $color-primary;
         color: $white;
+      }
+      + li {
+        border-top: 1px solid $gray-10;
       }
     }
   }

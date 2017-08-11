@@ -4,15 +4,17 @@
 
 .header {
   padding: $spacing-x-large $spacing-small 0;
+  background-color: $color-bg-header;
   text-align: center;
-  @include tablet-and-up {
-    padding: ($spacing-x-large * 2) 0 0;
-  };
   h1 {
     font-family: $font-family-logo;
   }
   p {
     margin-bottom: 0;
+    color: $gray-40;
     font-size: $font-size-medium;
   }
+  @include tablet-and-up {
+    padding: ($spacing-x-large * 2) 0 0;
+  };
 }

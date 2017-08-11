@@ -1,0 +1,36 @@
+/* ---------------------------------------------------
+    Variables - Layout
+--------------------------------------------------- */
+
+/* ------ Screen Width ------ */
+
+// Breakpoints
+$tablet-width  : 768px;
+$laptop-width  : 1024px;
+
+// Max Content Width
+$max-content-width : 1280px;
+
+/* ------ Grid ------ */
+
+$col-gutter : 2%;
+$col-widths : 6.5%,
+              15.0%,
+              23.5%,
+              32.0%,
+              40.5%,
+              49.0%,
+              57.5%,
+              66.0%,
+              74.5%,
+              83.0%,
+              91.5%,
+              100%;
+
+/* ------ Margin or Padding Spacing ------ */
+
+$spacing-x-large : 50px;
+$spacing-large   : 30px;
+$spacing-medium  : 20px;
+$spacing-small   : 10px;
+$spacing-x-small : 5px;

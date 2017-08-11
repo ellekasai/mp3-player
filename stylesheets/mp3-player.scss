@@ -2,17 +2,23 @@
     Elle's MP3 Player
 --------------------------------------------------- */
 
-// Base Settings
+/* ------ Base Settings ------ */
+
 @import "settings/normalize";
-@import "settings/variables";
-@import "settings/mixins";
+@import "settings/var-typography";
+@import "settings/var-color";
+@import "settings/var-layout";
+@import "settings/var-module";
+@import "settings/mixin";
 @import "settings/base";
 
-// Base Layouts
-@import "layout/grid";
-@import "layout/containers";
+/* ------ Base Layout ------ */
 
-// Partials
+@import "layout/grid";
+@import "layout/container";
+
+/* ------ Partials ------ */
+
 @import "partials/header";
 @import "partials/footer";
 @import "partials/audio-player";

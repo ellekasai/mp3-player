@@ -52,18 +52,9 @@ h3 {
   margin-bottom: $spacing-small;
   color: $color-text-heading-h3;
   font-size: $font-size-h3;
-  @include laptop-and-up {margin-bottom: $spacing-small + $spacing-x-small;};
-}
-
-h4 {
-  margin-bottom: $spacing-small;
-  color: $color-text-heading-h4;
-  font-size: $font-size-h4;
-}
-
-ol {
-  padding-left: $spacing-medium;
-  li {margin: $spacing-small 0;}
+  @include laptop-and-up {
+    margin-bottom: $spacing-small + $spacing-x-small;
+  };
 }
 
 ul {
@@ -86,7 +77,6 @@ p {
 a {
   color: $color-link;
   text-decoration: none;
-
   &:hover, &:focus {
     color: $color-link-hover;
     text-decoration: underline;

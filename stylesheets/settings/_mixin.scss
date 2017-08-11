@@ -2,7 +2,8 @@
     Mixins
 --------------------------------------------------- */
 
-// Responsive Layout
+/* ------ Responsive Layout ------ */
+
 @mixin tablet-and-up {
   @media screen and (min-width: $tablet-width) {
     @content;
@@ -15,7 +16,8 @@
   }
 }
 
-// Clearfix
+/* ------ Clearfix ------ */
+
 @mixin clearfix {
   &:before,
   &:after {

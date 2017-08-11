@@ -2,8 +2,7 @@
     Grid
 --------------------------------------------------- */
 
-
-// Grid Base
+/* ------ Grid Base ------ */
 
 .row {
   @include clearfix;
@@ -17,7 +16,7 @@
   }
 }
 
-// Responsive Column
+/* ------ Responsive Column ------ */
 
 @for $i from 1 through length($col-widths) {
 	.col-sm-#{$i} {
@@ -41,7 +40,7 @@
 	};
 }
 
-// Offset Column
+/* ------ Offset Column ------ */
 
 @for $i from 1 through length($col-widths) {
   .offset-sm-#{$i} {
