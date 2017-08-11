@@ -26,6 +26,7 @@
   padding: $spacing-small $spacing-x-small;
   background-color: rgba(0, 0, 0, .8);
   .col-sm-3 {
+    margin-top: 2px;
     &:first-child {
       padding-left: 0;
       text-align: right;
@@ -34,12 +35,18 @@
       padding-right: 0;
     }
   }
+  .col-sm-6 {
+    padding: 0;
+  }
   .progress-duration,
   .progress-audio-length {
     display: block;
     color: $gray-20;
   }
   .progress-bar {
+    padding: 1px 0;
+  }
+  .progress-bar-inner {
     height: 4px;
     margin: $spacing-small auto;
     background-color: $gray-40;
