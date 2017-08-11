@@ -34,7 +34,7 @@
     left: $spacing-large + $spacing-small;
   }
   .progress-bar {
-    width: 200px;
+    width: 180px;
     height: 4px;
     margin: 0 auto;
     background-color: $gray-40;
@@ -45,7 +45,7 @@
     }
   }
   .progress-audio-length {
-    right: $spacing-medium + $spacing-x-small;
+    right: $spacing-medium;
   }
 }
 
