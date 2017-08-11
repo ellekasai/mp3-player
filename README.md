@@ -8,7 +8,7 @@ Welcome to my MP3 player! I made this for practicing JavaScripts. Hope you enjoy
 - Play the Song
 - Pause the Song
 - Stop the Song
-- Show the Duration & Time Left
+- See the Progress, Current Play Time, and How Much Time Left
 - Change the Duration by Clicking the Progress Bar
 - Change the Volume
 - Change to the Next Song or Previous Song
