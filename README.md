@@ -12,7 +12,7 @@ Following [this article](https://www.sitepoint.com/browsers-website-support/), I
 - iOS 10+
 - Android 5.0+
 
-## Framework
+## Frameworks
 
 - I use [jQuery](https://jquery.com/) for JavaScripts.
 - For styling HTML/CSS, I use my framework which I build from scratch.
