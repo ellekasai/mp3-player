@@ -14,7 +14,7 @@ Following [this article](https://www.sitepoint.com/browsers-website-support/), I
 
 ## Frameworks
 
-- I use [jQuery](https://jquery.com/) for JavaScripts and got some inspiration from [this article](https://www.eduonix.com/blog/web-programming-tutorials/learn-build-audio-player-using-html5/).
+- I use [jQuery](https://jquery.com/) for JavaScript and got some inspiration from [this article](https://www.eduonix.com/blog/web-programming-tutorials/learn-build-audio-player-using-html5/).
 - For styling HTML/CSS, I used my framework which I build from scratch.
 
 ## Music & Photos
