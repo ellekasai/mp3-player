@@ -96,6 +96,7 @@
     img {
       width: 25px;
       + input {
+        max-width: 200px;
         margin-left: $spacing-small;
       }
     }
