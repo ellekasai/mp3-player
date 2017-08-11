@@ -1,5 +1,5 @@
 # Elle's MP3 Player
-I made this one to practice JavaScripts.
+Welcome to my MP3 Player! I made this one to practice JavaScripts. Hope you enjoy it :)
 
 [View Demo →](http://ellekasai.github.io/mp3-player)
 
@@ -12,10 +12,15 @@ Following [this article](https://www.sitepoint.com/browsers-website-support/), I
 - iOS 10+
 - Android 5.0+
 
-## Resources
+## Framework
 
-- [StockSnap.io (Photo)](https://stocksnap.io/)
+- I use [jQuery](https://jquery.com/) for JavaScripts.
+- For styling HTML/CSS, I use my framework which I build from scratch.
+
+## Music & Photos
+
 - [DOVA-SYNDROME (Music)](http://dova-s.jp/)
+- [StockSnap.io (Photo)](https://stocksnap.io/)
 
 ## Author
 
