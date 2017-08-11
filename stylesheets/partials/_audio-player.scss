@@ -21,22 +21,25 @@
   left: 0;
   width: 100%;
   height: 45px;
-  padding: $spacing-medium;
+  padding: $spacing-small $spacing-x-small;
   background-color: rgba(0, 0, 0, .8);
+  .col-sm-3 {
+    &:first-child {
+      padding-left: 0;
+      text-align: right;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
   .progress-duration,
   .progress-audio-length {
-    position: absolute;
+    display: block;
     color: $gray-20;
-    top: 50%;
-    margin-top: ($spacing-small + 2) * -1;
-  }
-  .progress-duration {
-    left: $spacing-large + $spacing-small;
   }
   .progress-bar {
-    width: 180px;
     height: 4px;
-    margin: 0 auto;
+    margin: $spacing-small auto;
     background-color: $gray-40;
     .bar-current {
       display: block;
@@ -44,16 +47,16 @@
       background-color: $white;
     }
   }
-  .progress-audio-length {
-    right: $spacing-medium;
-  }
 }
 
 .audio-player-body {
-  padding: $spacing-large;
+  padding: $spacing-medium;
   background-color: $white;
   border-radius: 0 0 $radius-default $radius-default;
   text-align: center;
+  @include tablet-and-up {
+    padding: $spacing-large;
+  };
   .body-section + .body-section {
     margin-top: $spacing-large;
   }
@@ -61,7 +64,11 @@
     .btn {
       display: inline-block;
       img {
+        height: 30px;
         transition: transform .15s linear;
+        @include tablet-and-up {
+          height: 44px;
+        };
       }
       &:hover, &:focus {
         img {
